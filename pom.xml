@@ -6,7 +6,7 @@
 
     <groupId>com.zhenggch</groupId>
     <artifactId>simple-notify-spring-boot-starter</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.1.0</version>
 
     <name>simple-notify-spring-boot-starter</name>
     <description>A lightweight Spring Boot starter for sending notifications (DingTalk, etc.)</description>
