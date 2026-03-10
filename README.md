@@ -10,7 +10,7 @@ A lightweight, extensible, and easy-to-use notification starter for Spring Boot 
 * **Zero-Code Integration**: Just add dependency and configuration.
 * **Multi-Channel Support**:
   * ✅ **DingTalk** (Supported in v0.1.0)
-  * 🚧 **Feishu/Lark** (Coming in v0.2.0)
+  * ✅ **Feishu/Lark** (Coming in v0.2.0)
   * 🚧 **Email** (Planned)
 * **Extensible Architecture**: Easily implement your own `NotifyService`.
 
@@ -39,6 +39,8 @@ simple:
     enabled: true
     dingtalk:
       webhook: [https://oapi.dingtalk.com/robot/send?access_token=YOUR_TOKEN](https://oapi.dingtalk.com/robot/send?access_token=YOUR_TOKEN)
+    feishu:
+      webhook: [https://open.feishu.cn/open-apis/bot/v2/hook/YOUR_FEISHU_TOKEN](https://open.feishu.cn/open-apis/bot/v2/hook/YOUR_FEISHU_TOKEN)
 
 ```
 
