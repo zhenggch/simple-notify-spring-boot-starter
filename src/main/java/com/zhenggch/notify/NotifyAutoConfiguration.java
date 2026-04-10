@@ -6,8 +6,10 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.scheduling.annotation.EnableAsync;
 
 @Configuration
+@EnableAsync
 @EnableConfigurationProperties(NotifyProperties.class)
 public class NotifyAutoConfiguration {
 
@@ -17,7 +19,6 @@ public class NotifyAutoConfiguration {
         return new DingTalkNotifyService(properties.getDingTalk().getWebhook());
     }
 
-    // 新增：当配置文件中有飞书的 webhook 时，自动注入飞书服务
     @Bean
     @ConditionalOnProperty(prefix = "simple.notify.feishu", name = "webhook")
     public NotifyService feishuNotifyService(NotifyProperties properties) {

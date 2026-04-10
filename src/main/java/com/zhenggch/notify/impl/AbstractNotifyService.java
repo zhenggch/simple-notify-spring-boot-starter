@@ -2,6 +2,7 @@ package com.zhenggch.notify.impl;
 
 import com.zhenggch.notify.NotifyService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.scheduling.annotation.Async;
 
 /**
  * 通知服务抽象基类
@@ -10,6 +11,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public abstract class AbstractNotifyService implements NotifyService {
 
+    @Async
     @Override
     public void send(String message) {
         String channelName = this.getClass().getSimpleName();
