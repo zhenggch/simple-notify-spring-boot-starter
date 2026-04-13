@@ -7,11 +7,14 @@ A lightweight, extensible, and easy-to-use notification starter for Spring Boot 
 
 ## ✨ Features
 
+## ✨ Features
+
 * **Zero-Code Integration**: Just add dependency and configuration.
 * **Multi-Channel Support**:
-  * ✅ **DingTalk** (Supported in v0.1.0)
-  * ✅ **Feishu/Lark** (Coming in v0.2.0)
+  * ✅ **DingTalk** (Supported)
+  * ✅ **Feishu/Lark** (Supported)
   * 🚧 **Email** (Planned)
+* **High Performance**: Native `@Async` support for non-blocking message delivery.
 * **Extensible Architecture**: Easily implement your own `NotifyService`.
 
 ## 📦 Installation
@@ -22,7 +25,7 @@ Add the following dependency to your `pom.xml`:
 <dependency>
     <groupId>com.zhenggch</groupId>
     <artifactId>simple-notify-spring-boot-starter</artifactId>
-    <version>0.1.0</version>
+  <version>1.0.0</version>
 </dependency>
 
 ```
