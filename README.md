@@ -88,3 +88,11 @@ This project is licensed under the [Apache 2.0 License](https://www.google.com/s
 
 Contributions, issues and feature requests are welcome!
 Feel free to check the [issues page](https://github.com/zhenggch/simple-notify-spring-boot-starter/issues) if you want to contribute.
+
+---
+
+## 🤝 Acknowledgments
+
+* Thanks to [YourKit](https://www.yourkit.com/) for supporting open-source projects with its full-featured [Java Profiler](https://www.yourkit.com/java/profiler/).
+* Thanks to [SonarCloud](https://sonarcloud.io/) for providing free code quality scanning.
+* Thanks to [Snyk](https://snyk.io/) for providing free security vulnerability monitoring.
