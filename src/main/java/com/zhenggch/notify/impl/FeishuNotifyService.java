@@ -2,6 +2,7 @@ package com.zhenggch.notify.impl;
 
 import cn.hutool.http.HttpUtil;
 import cn.hutool.json.JSONObject;
+import com.zhenggch.notify.exception.NotifyException;
 import lombok.RequiredArgsConstructor;
 
 /**
@@ -13,7 +14,7 @@ public class FeishuNotifyService extends AbstractNotifyService {
     private final String webhook;
 
     @Override
-    protected void doSend(String message) throws Exception {
+    protected void doSend(String message) throws NotifyException {
         JSONObject json = new JSONObject();
         json.set("msg_type", "text");
 

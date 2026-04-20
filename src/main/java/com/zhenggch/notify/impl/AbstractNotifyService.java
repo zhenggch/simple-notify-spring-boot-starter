@@ -1,6 +1,7 @@
 package com.zhenggch.notify.impl;
 
 import com.zhenggch.notify.NotifyService;
+import com.zhenggch.notify.exception.NotifyException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.scheduling.annotation.Async;
 
@@ -30,5 +31,5 @@ public abstract class AbstractNotifyService implements NotifyService {
      * @param message 消息内容
      * @throws Exception 发送过程中可能抛出的异常
      */
-    protected abstract void doSend(String message) throws Exception;
+    protected abstract void doSend(String message) throws NotifyException;
 }
